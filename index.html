@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATIE's Multiplication Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>✨ KATIE's Multiplication Game ✨</h1>
+
+    <div class="main-wrapper">
+        <div class="game-container" id="game-box">
+            <div id="game-screen">
+                <div class="score-board">
+                    <span>🌟 Correct: <span id="score">0</span></span>
+                    <span>💔 Incorrect: <span id="wrong-score">0</span></span>
+                    <span>📊 Total: <span id="total">0</span></span>
+                </div>
+                
+                <div class="problem" id="problem">...</div>
+                
+                <input type="number" id="answer" placeholder="?" autofocus>
+                
+                <div id="impact-msg" class="impact-msg"></div>
+                
+                <button onclick="showResults()">Finish Game</button>
+            </div>
+
+            <div id="results-screen">
+                <h2 style="color: #d81b60;">Final Results! 👑</h2>
+                <p>Correct: <span id="res-correct">0</span></p>
+                <p>Incorrect: <span id="res-wrong">0</span></p>
+                <p>Total: <span id="res-total">0</span></p>
+                <p style="font-size: 2rem; color: #ad1457;">Accuracy: <span id="res-percent">0</span>%</p>
+                <button onclick="location.reload()">Try Again!</button>
+            </div>
+        </div>
+
+        <div class="history-container">
+            <h3 style="margin-top:0; color: #8e24aa;">Your Progress 🎀</h3>
+            <div class="history-list" id="history-list"></div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
