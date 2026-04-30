@@ -1,4 +1,4 @@
-# Prjects Practice using AI #
+# Projects Practice using AI #
 * Main page - Katie's game land
   + Select games. 
 1. Multiplication Game
