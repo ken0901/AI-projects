@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katie's Game Land</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: radial-gradient(circle at top left, #ffb6e0 0%, #ff8ac5 40%, #8b33d6 100%);
+      color: #ffffff;
+    }
+    .app-shell {
+      width: min(100%, 960px);
+      padding: 36px;
+      border-radius: 32px;
+      background: rgba(255,255,255,0.14);
+      box-shadow: 0 30px 70px rgba(139, 51, 214, 0.28);
+      backdrop-filter: blur(14px);
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.35);
+    }
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.4rem, 4vw, 4.2rem);
+      letter-spacing: 0.08em;
+      color: #fff9ff;
+      text-shadow: 0 4px 20px rgba(255, 255, 255, 0.35);
+      font-family: 'Brush Script MT', cursive;
+    }
+    p {
+      margin: 0 0 32px;
+      color: #fbe9ff;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      padding: 24px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      background: rgba(255,255,255,0.14);
+      border-color: rgba(255,255,255,0.30);
+    }
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 1.5rem;
+    }
+    .card p {
+      margin: 0 0 20px;
+      color: #e8f0ff;
+    }
+    .card a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: none;
+      text-decoration: none;
+      font-weight: 700;
+      color: #182848;
+      background: #ffd15c;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 25px rgba(0,0,0,0.15);
+    }
+    .small-note {
+      margin-top: 32px;
+      font-size: 0.95rem;
+      color: #b8cdff;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <h1>Katie's Game Land</h1>
+    <p>Choose one of the two playful experiences below. Click a card to open the game in its folder and start playing immediately.</p>
+
+    <div class="grid">
+      <article class="card">
+        <h2>Multiplication Game</h2>
+        <p>Practice multiplication with real-time scoring, progress history, and instant feedback.</p>
+        <a href="Multiplication%20Game/index.html">Play Multiplication</a>
+      </article>
+
+      <article class="card">
+        <h2>Pong Game</h2>
+        <p>Launch the classic pong game with keyboard and mouse controls, difficulty selection, and arcade styling.</p>
+        <a href="Pong%20Game/index.html">Play Pong</a>
+      </article>
+    </div>
+
+    <div class="small-note">If the game does not load, make sure you are opening this page from a local web server or using a browser that allows local file navigation.</div>
+  </div>
+</body>
+</html>
