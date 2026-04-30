@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katie's Pong Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header-container">
+        <a class="back-home" href="../index.html">← Back to Katie's Game Land</a>
+        <h1>Katie's Pong Game</h1>
+        <button id="back-to-menu-btn" onclick="showMenu()">⚙️ Settings</button>
+    </div>
+
+    <div id="game-container">
+        <canvas id="pongCanvas" width="1200" height="600"></canvas>
+        
+        <div id="menu">
+            <div class="menu-section">
+                <div class="menu-label">Difficulty âœ¨</div>
+                <button class="choice active" onclick="setDiff('easy', this)">Easy</button>
+                <button class="choice" onclick="setDiff('medium', this)">Medium</button>
+                <button class="choice" onclick="setDiff('hard', this)">Hard</button>
+            </div>
+            <div class="menu-section">
+                <div class="menu-label">Control Method ðŸŽ€</div>
+                <button class="choice active" onclick="setControl('keyboard', this)">Keyboard</button>
+                <button class="choice" onclick="setControl('mouse', this)">Mouse</button>
+            </div>
+            <button id="start-btn" onclick="startGame()">Start Game!</button>
+        </div>
+    </div>
+
+    <div class="hint">Press <b>R</b> to reset score | Ball Speed increases with each hit!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
