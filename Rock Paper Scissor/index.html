@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaite's Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="game-container">
+            <h1>Kaite's Rock Paper Scissor Game 🎀</h1>
+            
+            <div class="score-board">
+                <div class="score">YOU: <span id="user-score">0</span></div>
+                <div class="score">AI: <span id="comp-score">0</span></div>
+            </div>
+
+            <div class="stage">
+                <div id="start-screen">
+                    <button id="start-btn">Start Round ✨</button>
+                </div>
+
+                <div id="countdown" class="hidden"></div>
+
+                <div id="choices-grid" class="hidden">
+                    <button class="choice" id="rock">🪨</button>
+                    <button class="choice" id="paper">📄</button>
+                    <button class="choice" id="scissors">✂️</button>
+                </div>
+            </div>
+
+            <div class="result-area">
+                <p id="message">Press start to play!</p>
+            </div>
+        </div>
+
+        <div class="history-container">
+            <h3>History 📜</h3>
+            <ul id="history-list"></ul>
+            <button id="reset">Reset Game</button>
+        </div>
+
+        <a class="back-button" href="../index.html">← Back to Game Land</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
