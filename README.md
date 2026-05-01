@@ -3,5 +3,7 @@
   + Select games. 
 1. Multiplication Game
      + Using gemini.
-3. Pong Game
+2. Pong Game
      + Using chatGTP.
+3. Rock Paper Scissor Game
+     + Using gemini.
